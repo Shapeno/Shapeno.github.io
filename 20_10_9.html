@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)file:///C:/Users/ClouD/AppData/Local/Temp/mume202159-30296-yfkgcn.qxl3o.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>20_10_9</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./20_10_9_files/katex.min.css">
+      
+      
+      
+      <script type="text/javascript" src="./20_10_9_files/mermaid.min.js.下载" charset="UTF-8"></script>
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}@font-face{font-family:'Raleway';font-style:italic;font-weight:400;src:local('Raleway Italic'),local('Raleway-Italic'),url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4TYFv.ttf) format('truetype')}@font-face{font-family:'Raleway';font-style:italic;font-weight:700;src:local('Raleway Bold Italic'),local('Raleway-BoldItalic'),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCe.ttf) format('truetype')}@font-face{font-family:'Raleway';font-style:normal;font-weight:400;src:local('Raleway'),local('Raleway-Regular'),url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype')}@font-face{font-family:'Raleway';font-style:normal;font-weight:700;src:local('Raleway Bold'),local('Raleway-Bold'),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype')}body{background:#fcfcfc;color:#111;font-family:'Raleway',sans-serif;font-weight:400;font-size:16px}body h1,body h2,body h3,body h4,body h5,body h6,body table,body li,body .mathjax-exps,body .math{color:#111;font-family:'Raleway',sans-serif}body h1{font-weight:normal;line-height:4rem;margin:0 0 1.75rem;padding:20px 30px;text-align:center;text-transform:uppercase;margin-top:4rem}body h2{font-weight:normal;line-height:3rem;margin:0 0 1.9375rem;padding:0 30px;text-align:center;text-transform:uppercase;margin-top:3rem}body h3{font-weight:normal}body h4{font-weight:normal}body h5{font-size:1.125rem;font-weight:normal}body h6{font-size:1rem;font-weight:bold}body p{color:#111;font-size:1rem;line-height:1.75rem;margin:0 0 1.25rem}body blockquote{margin-left:1rem;margin-right:0;padding:.5em}body h1{font-size:2.827rem}body h2{font-size:1.999rem}body h3{font-size:1.413rem}body h4{font-size:1.25rem}body h5{font-size:1.15rem}body h6{font-size:1rem}body a{color:#990000;text-decoration:none}body a:hover{text-decoration:underline}body table{margin-bottom:20px}body table th,body table td{padding:8px;line-height:1.25rem;vertical-align:top;border-top:1px solid #ddd}body table th{font-weight:bold}body table thead th{vertical-align:bottom}body table caption+thead tr:first-child th,body table caption+thead tr:first-child td,body table colgroup+thead tr:first-child th,body table colgroup+thead tr:first-child td,body table thead:first-child tr:first-child th,body table thead:first-child tr:first-child td{border-top:0}body table tbody+tbody{border-top:2px solid #ddd}body code{padding:.5em;color:inherit;border:1px solid #ccc;padding:.1em;font-size:.9em;margin-left:.2em;margin-right:.2em}body pre>code{border:none}body li>p{margin-top:0;margin-bottom:0}body .task-list{padding-left:0}body .task-list-item{list-style:none;margin-left:-2.4em}body .task-list-item input{top:3px;margin-right:1.6em}body .task-list-item input:before{content:"";display:inline-block;width:1rem;height:1rem;vertical-align:middle;text-align:center;border:1px solid gray;background-color:#fdfdfd;margin-left:0;margin-top:-0.8rem}body .task-list-item input:checked:before,body .task-list-item input[checked]:before{content:'\25FC';font-size:.8125rem;line-height:.9375rem;margin-top:-1rem}@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm){body .task-list-item input:before{margin-top:-0.2rem}body .task-list-item input:checked:before,body .task-list-item input[checked]:before{margin-top:-0.2rem}}body blockquote{margin:0 0 1.11111rem;padding:.5rem 1.11111rem 0 1.05556rem;border-left:1px solid gray;background-color:#ededed}body blockquote,body blockquote p{line-height:1.6;color:#6f6f6f}body img{max-width:100%}body kbd{color:#111}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="%E5%BA%95%E7%9B%98%E7%B3%BB%E5%88%97%E6%B5%8B%E8%AF%95">底盘系列测试</h1>
+
+<h2 class="mume-header" id="%E4%B8%8D%E5%90%8C%E4%BE%9B%E7%94%B5%E7%94%B5%E5%8E%8B%E6%B0%B4%E5%B9%B3%E5%AF%B9%E5%BA%95%E7%9B%98%E8%BF%90%E5%8A%A8%E6%80%A7%E8%83%BD%E7%9A%84%E5%BD%B1%E5%93%8D">不同供电电压水平对底盘运动性能的影响</h2>
+
+<p>2020/10/9 邓孝云</p>
+<h3 class="mume-header" id="%E6%B5%8B%E8%AF%95%E5%8E%9F%E5%9B%A0">测试原因：</h3>
+
+<p>在底盘加装超级电容系统以极高的设定速度运动时，会出现跑歪的情况，而在相对低速下运动轨迹比较直，怀疑是所有电机已经达到最大输出能力，这个时候闭环控制失效，由于不同电机之间存在固定差异，导致不同电机输出速度不同而跑歪。</p>
+<h3 class="mume-header" id="%E6%B5%8B%E8%AF%95%E7%9B%AE%E7%9A%84">测试目的：</h3>
+
+<p>目前的超级电容方案对底盘运动有什么样的负面影响，即不同电压下底盘的运动能力存在什么差异。</p>
+<h3 class="mume-header" id="%E8%83%8C%E6%99%AF%E5%86%85%E5%AE%B9">背景内容：</h3>
+
+<h4 class="mume-header" id="%E8%B6%85%E7%BA%A7%E7%94%B5%E5%AE%B9">超级电容：</h4>
+
+<p>底盘由超级电容控制板输出端直接供电，供电电压与电容相同。<br>
+底盘供电关系：<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>f</mi></mrow></msub><mo>=</mo><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ref}=P_{cap}+P_{ch}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1623223669050" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="179.7811279296875" style="max-width: 549.2244873046875px;" viewBox="0 0 549.2244873046875 179.7811279296875"><style>#mermaid-1623223669050{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1623223669050 .error-icon{fill:#552222;}#mermaid-1623223669050 .error-text{fill:#552222;stroke:#552222;}#mermaid-1623223669050 .edge-thickness-normal{stroke-width:2px;}#mermaid-1623223669050 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1623223669050 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1623223669050 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1623223669050 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1623223669050 .marker{fill:#333333;stroke:#333333;}#mermaid-1623223669050 .marker.cross{stroke:#333333;}#mermaid-1623223669050 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1623223669050 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1623223669050 .cluster-label text{fill:#333;}#mermaid-1623223669050 .cluster-label span{color:#333;}#mermaid-1623223669050 .label text,#mermaid-1623223669050 span{fill:#333;color:#333;}#mermaid-1623223669050 .node rect,#mermaid-1623223669050 .node circle,#mermaid-1623223669050 .node ellipse,#mermaid-1623223669050 .node polygon,#mermaid-1623223669050 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1623223669050 .node .label{text-align:center;}#mermaid-1623223669050 .node.clickable{cursor:pointer;}#mermaid-1623223669050 .arrowheadPath{fill:#333333;}#mermaid-1623223669050 .edgePath .path{stroke:#333333;stroke-width:1.5px;}#mermaid-1623223669050 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1623223669050 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1623223669050 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1623223669050 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1623223669050 .cluster text{fill:#333;}#mermaid-1623223669050 .cluster span{color:#333;}#mermaid-1623223669050 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80,100%,96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1623223669050:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-1623223669050 flowchart{fill:apa;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M92.00567626953125,82.35437107086182L131.52272129058838,82.35437107086182L171.0397663116455,82.35437107086182" marker-end="url(#arrowhead21)" style="fill:none"></path><defs><marker id="arrowhead21" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M257.0668517479961,61.44528102874756L313.12783432006836,28.909090042114258L371.217321395874,28.909090042114258" marker-end="url(#arrowhead22)" style="fill:none"></path><defs><marker id="arrowhead22" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-C" id="L-B-C" style="opacity: 1;"><path class="path" d="M257.0668517479961,103.26346111297607L313.12783432006836,135.79965209960938L355.2159023284912,135.79965209960938" marker-end="url(#arrowhead23)" style="fill:none"></path><defs><marker id="arrowhead23" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-D LE-电机" id="L-D-电机" style="opacity: 1;"><path class="path" d="M423.22015953063965,28.909090042114258L464.22157859802246,28.909090042114258L489.22157859802246,28.909090042114258" marker-end="url(#arrowhead24)" style="fill:none"></path><defs><marker id="arrowhead24" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(131.52272129058838,82.35437107086182)" style="opacity: 1;"><g transform="translate(-14.517045021057129,-9.545454025268555)" class="label"><rect rx="0" ry="0" width="29.034090042114258" height="19.09090805053711"></rect><foreignobject width="29.034090042114258" height="19.09090805053711"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A&#39; L-LE-B">Pref</span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(313.12783432006836,28.909090042114258)" style="opacity: 1;"><g transform="translate(-12.798295021057129,-9.545454025268555)" class="label"><rect rx="0" ry="0" width="25.596590042114258" height="19.09090805053711"></rect><foreignobject width="25.596590042114258" height="19.09090805053711"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B&#39; L-LE-D">Pch</span></div></foreignobject></g></g><g class="edgeLabel" transform="translate(313.12783432006836,135.79965209960938)" style="opacity: 1;"><g transform="translate(-17.08806800842285,-9.545454025268555)" class="label"><rect rx="0" ry="0" width="34.1761360168457" height="19.09090805053711"></rect><foreignobject width="34.1761360168457" height="19.09090805053711"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-C" class="edgeLabel L-LS-B&#39; L-LE-C">Pcap</span></div></foreignobject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-D-电机" class="edgeLabel L-LS-D&#39; L-LE-电机"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(50.002838134765625,82.35437107086182)" style="opacity: 1;"><rect rx="0" ry="0" x="-42.002838134765625" y="-20.909090042114258" width="84.00567626953125" height="41.818180084228516" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-32.002838134765625,-10.909090042114258)"><foreignobject width="64.00567626953125" height="21.818180084228516"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">裁判系统</div></foreignobject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(221.0397663116455,82.35437107086182)" style="opacity: 1;"><rect rx="0" ry="0" x="-50" y="-20.909090042114258" width="100" height="41.818180084228516" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40,-10.909090042114258)"><foreignobject width="80" height="21.818180084228516"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">电容控制板</div></foreignobject></g></g></g><g class="node default" id="flowchart-D-11" transform="translate(397.21874046325684,28.909090042114258)" style="opacity: 1;"><rect rx="0" ry="0" x="-26.001419067382812" y="-20.909090042114258" width="52.002838134765625" height="41.818180084228516" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.001419067382812,-10.909090042114258)"><foreignobject width="32.002838134765625" height="21.818180084228516"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">底盘</div></foreignobject></g></g></g><g class="node default" id="flowchart-C-13" label-offset-y="10.048252967206322" transform="translate(397.21874046325684,135.79965209960938)" style="opacity: 1;"><path d="M 0,10.048252967206322 a 42.002838134765625,10.048252967206322 0,0,0 84.00567626953125 0 a 42.002838134765625,10.048252967206322 0,0,0 -84.00567626953125 0 l 0,51.86643305143484 a 42.002838134765625,10.048252967206322 0,0,0 84.00567626953125 0 l 0,-51.86643305143484" transform="translate(-42.002838134765625,-35.98146949292374)" class="label-container"></path><g class="label" transform="translate(0,0)"><g transform="translate(-32.002838134765625,-10.909090042114258)"><foreignobject width="64.00567626953125" height="21.818180084228516"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">超级电容</div></foreignobject></g></g></g><g class="node default" id="flowchart-电机-15" transform="translate(515.2229976654053,28.909090042114258)" style="opacity: 1;"><rect rx="0" ry="0" x="-26.001419067382812" y="-20.909090042114258" width="52.002838134765625" height="41.818180084228516" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.001419067382812,-10.909090042114258)"><foreignobject width="32.002838134765625" height="21.818180084228516"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">电机</div></foreignobject></g></g></g></g></g></g></svg></div><p>其中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>r</mi><mi>e</mi><mi>f</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ref}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>为裁判系统输出功率，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{cap}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>为电容充电功率,<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ch}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为底盘消耗功率。超级电容控制板的作用是通过硬件限制<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub><mo>⩽</mo><msub><mi>P</mi><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{cap}+P_{ch}\leqslant P_{lim}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel amsrm">⩽</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">im</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>,防止超功率。<br>
+可以得到以下结论：</p>
+<ul>
+<li>当底盘功率&gt;限制功率，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub><mo>&gt;</mo><msub><mi>P</mi><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ch}&gt; P_{lim}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">im</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>时，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{cap}&lt;0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>即电容放电，电容电压降低。</li>
+<li>当底盘功率=限制功率，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub><mo>=</mo><msub><mi>P</mi><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ch}= P_{lim}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">im</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>时，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{cap}=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>即电容补充不放，电容电压不变。</li>
+<li>底盘功率&lt;限制功率，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>h</mi></mrow></msub><mo>&lt;</mo><msub><mi>P</mi><mrow><mi>l</mi><mi>i</mi><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">P_{ch}&lt; P_{lim}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">im</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>时，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mrow><mi>c</mi><mi>a</mi><mi>p</mi></mrow></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{cap}&gt;0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>即电容充电，电容电压升高。</li>
+</ul>
+<p>所以当底盘以<strong>大于裁判系统限制功率</strong>去运动时，超级电容<strong>电压</strong>会随运动时间增加<strong>下降</strong>。</p>
+<h4 class="mume-header" id="%E9%BA%A6%E8%BD%AE%E9%80%9F%E5%BA%A6%E5%88%86%E8%A7%A3">麦轮速度分解：</h4>
+
+<p>向前运动:<br>
+<img src="./20_10_9_files/20_10_9_1.png" alt="向前运动" title="四个轮子的速度"><br>
+这里左边两条柱位左侧两电机，右边两条柱为右侧两电机。这里我们不关注横向移动的情况。</p>
+<blockquote>
+<p>注意：实际向前运动时，由于安装是对称的，左右电机的实际旋转方向是相反的，这里为了方便理解，假定向前运动是四个轮子速度都为正。</p>
+</blockquote>
+<p>原地旋转运动：<br>
+<img src="./20_10_9_files/20_10_9_2.png" alt="原地旋转运动" title="四个轮子的速度"></p>
+<p>边向前边旋转：<br>
+<img src="./20_10_9_files/20_10_9_3.png" alt="原地旋转运动" title="四个轮子的速度"></p>
+<h3 class="mume-header" id="%E6%B5%8B%E8%AF%95%E6%96%B9%E6%A1%88">测试方案：</h3>
+
+<p>如果电压会影响电机的最大速度，应该会出现以下现象，其中灰色顶端为设定的目标速度，蓝色为电机在某个电压水平下实际可以达到的速度。</p>
+<ol>
+<li>电机速度目标设定值高于某个值后，速度将达到最大值，且不会随目标值提高而提高。<br>
+<img src="./20_10_9_files/20_10_9_4.png" alt="速度受限" title="速度受限"></li>
+<li>电机速度目标设定值高于某个值后，给一个小幅度的自旋分量，将不会产生效果。<br>
+<img src="./20_10_9_files/20_10_9_5.png" alt="自旋分量无效" title="自旋分量无效"></li>
+<li>在大于底盘功率限制情况下运动，电容电压下降，出现以上两个现象的域值会降低，即电压下降，电机最大转速受到影响。<br>
+<img src="./20_10_9_files/20_10_9_6.png" alt="电压影响" title="电压影响"></li>
+</ol>
+<h3 class="mume-header" id="%E6%B5%8B%E8%AF%95%E7%8E%B0%E8%B1%A1">测试现象：</h3>
+
+<ol>
+<li>在给定很大的目标速度向前运动时，不但会出现速度无法再继续提高的现象，并且还会走歪。在低速下反而不会走歪。推论如下：<br>
+<img src="./20_10_9_files/20_10_9_7.png" alt="电机性能差异" title="电机性能差异"><br>
+给定目标速度很大时已经没有闭环控制的余度，电机之间由于存在装配和产品本身的差异，在每个电机以最大输出功率运动时，并非所有电机速度一致，导致了跑歪。<br>
+<img src="./20_10_9_files/20_10_9_8.png" alt="闭环避免差异" title="闭环控制避免差异影响"><br>
+在低速下，通过对每个电机速度的闭环控制就可以实现四个轮子的速度一致，不会跑歪。</li>
+<li>实验现象与实验方法推测一致，当底盘高速运动跑歪的同时，自旋运动也会失效。</li>
+<li>以高速运动并且同时进行自旋运动，随时间推移，出现现象1和2，特别是2的速度设定值会明显降低，换句话电压降低使底盘的运动性能明显降低。</li>
+</ol>
+<h3 class="mume-header" id="%E6%B5%8B%E8%AF%95%E7%BB%93%E8%AE%BA">测试结论：</h3>
+
+<ol>
+<li>为了保证底盘运动能力和稳定性，要设定合适的目标速度或者遥控器灵敏度。太大将容易出现现象1和2，太小又不能完全发挥底盘的运动能力。</li>
+<li>为了防止超级电容过度放电影响底盘运动能力，有如下两个解决方案：
+<ul>
+<li>使用裁判系统自定义用户界面将电容容量打印在操作手界面上，让操作手自行控制容量在合适范围内。</li>
+<li>在超级电容控制板输出接口处增加一个升压电路，保证给底盘提供的电压在电机的额定工作电压附近，保证运动能力。缺点使会增加额外功耗和复杂度，电容消耗速度可能更块。</li>
+</ul>
+</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.getElementsByClassName('mermaid'))
+}
+</script><div class="mermaidTooltip" style="opacity: 0;"></div>
+    
+    
+    
+    
+    
+  </body></html>
